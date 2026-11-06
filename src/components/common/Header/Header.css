@@ -1,0 +1,110 @@
+.project-header {
+  width: 100%;
+  height: 65px;
+  padding: 0 40px;
+  box-sizing: border-box;
+  background-color: #fffaf1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Back button */
+.back-btn {
+  background-color: #f0ebe2;
+  color: #333;
+
+  border: 1px solid #ded5c8;
+  border-radius: 25px;
+
+  padding: 9px 18px;
+  font-size: 13px;
+
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+
+
+/* Navigation buttons */
+.header-nav button {
+  background: transparent;
+  border: none;
+
+  color: #55504a;
+  font-size: 14px;
+  font-weight: 500;
+
+  padding: 10px 0;
+
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+  white-space: nowrap;
+}
+
+/* Active button */
+.header-nav button.active {
+  color: #b88727;
+  font-weight: 700;
+  border-bottom: 2px solid #b88727;
+}
+
+/* Hover effect */
+.header-nav button:hover {
+  color: #b88727;
+}
+
+/* Call button */
+.call-btn {
+  background: linear-gradient(135deg, #e8c779, #b88727);
+  color: #333;
+
+  border: none;
+  border-radius: 25px;
+
+  padding: 11px 20px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.call-btn:hover {
+  background: #a97920;
+}
+
+
+.back-btn {
+  flex-shrink: 0;
+}
+
+.call-btn {
+  flex-shrink: 0;
+}
+
+/* Responsive navbar */
+@media (max-width: 900px) {
+  .project-header {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+  }
+
+  .header-nav {
+    order: 3;
+    width: 100%;
+    overflow-x: auto;
+    justify-content: flex-start;
+    gap: 32px;
+  }
+}
